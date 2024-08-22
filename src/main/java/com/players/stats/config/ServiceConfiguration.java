@@ -5,8 +5,8 @@ import com.players.stats.dto.Players;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 
-import java.io.File;
 import java.io.IOException;
 
 @Slf4j
@@ -19,8 +19,9 @@ public class ServiceConfiguration {
     public Players readPlayersFile() {
         // ideally we would have a database
         Players players = Players.builder().build();
+        ClassPathResource resource = new ClassPathResource("players.json");
         try {
-            players = mapper.readValue(new File("src/main/resources/players.json"), Players.class);
+            players = mapper.readValue(resource.getInputStream(), Players.class);
         } catch (IOException e) {
             log.error(e.getMessage());
         }
