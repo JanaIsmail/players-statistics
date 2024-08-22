@@ -2,7 +2,10 @@ com\players\stats\dto\Country.class
 com\players\stats\config\ServiceConfiguration.class
 com\players\stats\service\PlayersService.class
 com\players\stats\dto\PlayersStatistics$PlayersStatisticsBuilder.class
+com\players\stats\controller\HomePageController.class
+com\players\stats\dto\HomePageData$HomePageDataBuilder.class
 com\players\stats\dto\PlayerData.class
+com\players\stats\dto\HomePageData.class
 com\players\stats\exception\PlayerNotFoundException.class
 com\players\stats\dto\Player.class
 com\players\stats\dto\Player$PlayerBuilder.class
