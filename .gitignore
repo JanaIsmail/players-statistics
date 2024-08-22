@@ -1,5 +1,4 @@
 # file: ~/.gitignore_global
 .idea
-app.log
-app.log*/
+app.log*
 target/
