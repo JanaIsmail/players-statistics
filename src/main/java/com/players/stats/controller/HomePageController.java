@@ -1,6 +1,5 @@
 package com.players.stats.controller;
 
-import com.players.stats.dto.HomePageData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +13,7 @@ public class HomePageController {
     }
 
     @GetMapping("/")
-    public ResponseEntity<HomePageData> homePage() {
-        return ResponseEntity.ok(HomePageData.builder().message("Welcome to the players statistics application").build());
+    public ResponseEntity<String> homePage() {
+        return ResponseEntity.ok("Welcome to the players statistics application");
     }
 }

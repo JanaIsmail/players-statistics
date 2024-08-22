@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/players")
 public class PlayersController {
 
     private final PlayersService playersService;
@@ -23,19 +23,19 @@ public class PlayersController {
         this.playersService = playersService;
     }
 
-    @GetMapping(value = "/players", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Players> getAllPlayers() {
         log.info("Retrieving all players");
         return ResponseEntity.ok(playersService.getAllPlayers());
     }
 
-    @GetMapping(value = "/players/{playerId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/{playerId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Player> getPlayerById(@PathVariable int playerId) {
         log.info("Retrieving player with id {}", playerId);
         return ResponseEntity.ok(playersService.getPlayerById(playerId));
     }
 
-    @GetMapping(value = "/players/statistics", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/statistics", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<PlayersStatistics> getStatistics() {
         log.info("Retrieving players statistics");
         return ResponseEntity.ok(playersService.getStats());

@@ -32,7 +32,7 @@ public class PlayersControllerTest {
     @Test
     void test_get_all_players() throws Exception {
         when(playersService.getAllPlayers()).thenReturn(Players.builder().build());
-        String content = mockMvc.perform(get("/api/players"))
+        String content = mockMvc.perform(get("/players"))
                 .andExpect(status().isOk())
                 .andReturn()
                 .getResponse()
@@ -44,7 +44,7 @@ public class PlayersControllerTest {
     @Test
     void test_get_player_by_id() throws Exception {
         when(playersService.getPlayerById(anyInt())).thenReturn(Player.builder().build());
-        String content = mockMvc.perform(get("/api/players/1"))
+        String content = mockMvc.perform(get("/players/1"))
                 .andExpect(status().isOk())
                 .andReturn()
                 .getResponse()
@@ -56,7 +56,7 @@ public class PlayersControllerTest {
     @Test
     void test_get_players_stats() throws Exception {
         when(playersService.getStats()).thenReturn(PlayersStatistics.builder().build());
-        String content = mockMvc.perform(get("/api/players/statistics"))
+        String content = mockMvc.perform(get("/players/statistics"))
                 .andExpect(status().isOk())
                 .andReturn()
                 .getResponse()
