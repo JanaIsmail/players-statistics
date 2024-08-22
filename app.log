@@ -1,108 +1,50 @@
-2024-08-21T23:09:59.713+02:00  INFO 27408 --- [main] com.players.stats.MainApplication        : Starting MainApplication using Java 22.0.2 with PID 27408 (C:\Users\janai\Desktop\Projets\PlayersStatistics\target\classes started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
-2024-08-21T23:09:59.715+02:00  INFO 27408 --- [main] com.players.stats.MainApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-08-21T23:10:00.765+02:00  INFO 27408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1818 (http)
-2024-08-21T23:10:00.785+02:00  INFO 27408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-21T23:10:00.786+02:00  INFO 27408 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-21T23:10:00.858+02:00  INFO 27408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-21T23:10:00.858+02:00  INFO 27408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1084 ms
-2024-08-21T23:10:01.274+02:00  INFO 27408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1818 (http) with context path '/'
-2024-08-21T23:10:01.284+02:00  INFO 27408 --- [main] com.players.stats.MainApplication        : Started MainApplication in 2.182 seconds (process running for 2.627)
-2024-08-21T23:10:01.288+02:00  INFO 27408 --- [main] com.players.stats.MainApplication        : Application is starting...
-2024-08-21T23:10:01.396+02:00  INFO 27408 --- [http-nio-1818-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-21T23:10:01.396+02:00  INFO 27408 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-21T23:10:01.399+02:00  INFO 27408 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-21T23:10:01.438+02:00  INFO 27408 --- [http-nio-1818-exec-1] c.p.stats.controller.PlayersController   : Retrieving all players
-2024-08-21T23:10:08.410+02:00  INFO 27408 --- [http-nio-1818-exec-3] c.p.stats.controller.PlayersController   : Retrieving player with id 102
-2024-08-21T23:10:13.254+02:00  INFO 27408 --- [http-nio-1818-exec-9] c.p.stats.controller.PlayersController   : Retrieving all players
-2024-08-21T23:26:20.479+02:00  INFO 20288 --- [main] com.players.stats.MainApplication        : Starting MainApplication using Java 17.0.2 with PID 20288 (C:\Users\janai\Desktop\Projets\PlayersStatistics\target\classes started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
-2024-08-21T23:26:20.485+02:00  INFO 20288 --- [main] com.players.stats.MainApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-08-21T23:26:21.386+02:00  INFO 27408 --- [http-nio-1818-exec-8] c.p.stats.controller.PlayersController   : Retrieving all players
-2024-08-21T23:26:22.474+02:00  INFO 20288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1818 (http)
-2024-08-21T23:26:22.492+02:00  INFO 20288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-21T23:26:22.493+02:00  INFO 20288 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-21T23:26:22.604+02:00  INFO 20288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-21T23:26:22.604+02:00  INFO 20288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2044 ms
-2024-08-21T23:26:23.297+02:00  WARN 20288 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-08-21T23:26:23.326+02:00  INFO 20288 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-21T23:26:23.350+02:00 ERROR 20288 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 1818 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 1818 or configure this application to listen on another port.
-
-2024-08-21T23:26:26.269+02:00  INFO 27408 --- [http-nio-1818-exec-5] c.p.stats.controller.PlayersController   : Retrieving players stats
-2024-08-21T23:26:31.279+02:00  WARN 27408 --- [http-nio-1818-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "statistics"]
-2024-08-21T23:26:43.414+02:00  INFO 27076 --- [main] com.players.stats.MainApplication        : Starting MainApplication using Java 17.0.2 with PID 27076 (C:\Users\janai\Desktop\Projets\PlayersStatistics\target\classes started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
-2024-08-21T23:26:43.417+02:00  INFO 27076 --- [main] com.players.stats.MainApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-08-21T23:26:45.178+02:00  INFO 27076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1818 (http)
-2024-08-21T23:26:45.196+02:00  INFO 27076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-21T23:26:45.197+02:00  INFO 27076 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-21T23:26:45.286+02:00  INFO 27076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-21T23:26:45.287+02:00  INFO 27076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1783 ms
-2024-08-21T23:26:46.189+02:00  WARN 27076 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-08-21T23:26:46.225+02:00  INFO 27076 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-21T23:26:46.260+02:00 ERROR 27076 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 1818 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 1818 or configure this application to listen on another port.
-
-2024-08-21T23:27:17.433+02:00  INFO 10952 --- [main] com.players.stats.MainApplication        : Starting MainApplication using Java 17.0.2 with PID 10952 (C:\Users\janai\Desktop\Projets\PlayersStatistics\target\classes started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
-2024-08-21T23:27:17.437+02:00  INFO 10952 --- [main] com.players.stats.MainApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-08-21T23:27:19.099+02:00  INFO 10952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1818 (http)
-2024-08-21T23:27:19.120+02:00  INFO 10952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-21T23:27:19.120+02:00  INFO 10952 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-21T23:27:19.200+02:00  INFO 10952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-21T23:27:19.201+02:00  INFO 10952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1691 ms
-2024-08-21T23:27:19.793+02:00  WARN 10952 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-08-21T23:27:19.814+02:00  INFO 10952 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-21T23:27:19.843+02:00 ERROR 10952 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 1818 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 1818 or configure this application to listen on another port.
-
-2024-08-21T23:29:26.331+02:00  INFO 15776 --- [main] com.players.stats.MainApplication        : Starting MainApplication using Java 17.0.2 with PID 15776 (C:\Users\janai\Desktop\Projets\PlayersStatistics\target\classes started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
-2024-08-21T23:29:26.335+02:00  INFO 15776 --- [main] com.players.stats.MainApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-08-21T23:29:27.852+02:00  INFO 15776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 2020 (http)
-2024-08-21T23:29:27.871+02:00  INFO 15776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-21T23:29:27.872+02:00  INFO 15776 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-21T23:29:27.957+02:00  INFO 15776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-21T23:29:27.958+02:00  INFO 15776 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1549 ms
-2024-08-21T23:29:28.587+02:00  INFO 15776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 2020 (http) with context path '/'
-2024-08-21T23:29:28.598+02:00  INFO 15776 --- [main] com.players.stats.MainApplication        : Started MainApplication in 3.004 seconds (process running for 3.528)
-2024-08-21T23:29:28.601+02:00  INFO 15776 --- [main] com.players.stats.MainApplication        : Application is starting...
-2024-08-21T23:29:40.303+02:00  INFO 15776 --- [http-nio-2020-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-21T23:29:40.304+02:00  INFO 15776 --- [http-nio-2020-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-21T23:29:40.307+02:00  INFO 15776 --- [http-nio-2020-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-21T23:29:40.365+02:00  INFO 15776 --- [http-nio-2020-exec-1] c.p.stats.controller.PlayersController   : Retrieving players statistics
+2024-08-22T22:51:45.184+02:00  INFO 17160 --- [main] Controller.PlayersControllerTest         : Starting PlayersControllerTest using Java 22.0.2 with PID 17160 (started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
+2024-08-22T22:51:45.201+02:00  INFO 17160 --- [main] Controller.PlayersControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T22:51:49.161+02:00  INFO 17160 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-22T22:51:49.161+02:00  INFO 17160 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-22T22:51:49.165+02:00  INFO 17160 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-08-22T22:51:49.223+02:00  INFO 17160 --- [main] Controller.PlayersControllerTest         : Started PlayersControllerTest in 4.763 seconds (process running for 6.37)
+2024-08-22T22:51:49.424+02:00  INFO 17160 --- [main] c.p.stats.controller.PlayersController   : Retrieving player with id 1
+2024-08-22T22:51:49.534+02:00  WARN 17160 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "stats"]
+2024-08-22T22:51:49.571+02:00  INFO 17160 --- [main] c.p.stats.controller.PlayersController   : Retrieving all players
+2024-08-22T22:53:23.682+02:00  INFO 17948 --- [main] Controller.PlayersControllerTest         : Starting PlayersControllerTest using Java 22.0.2 with PID 17948 (started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
+2024-08-22T22:53:23.697+02:00  INFO 17948 --- [main] Controller.PlayersControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T22:53:30.394+02:00  INFO 17948 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-22T22:53:30.394+02:00  INFO 17948 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-22T22:53:30.398+02:00  INFO 17948 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2024-08-22T22:53:30.485+02:00  INFO 17948 --- [main] Controller.PlayersControllerTest         : Started PlayersControllerTest in 7.961 seconds (process running for 10.279)
+2024-08-22T22:53:30.975+02:00  INFO 17948 --- [main] c.p.stats.controller.PlayersController   : Retrieving player with id 1
+2024-08-22T22:53:31.254+02:00  WARN 17948 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "stats"]
+2024-08-22T22:53:31.307+02:00  INFO 17948 --- [main] c.p.stats.controller.PlayersController   : Retrieving all players
+2024-08-22T22:54:37.341+02:00  INFO 20180 --- [main] Controller.PlayersControllerTest         : Starting PlayersControllerTest using Java 17.0.2 with PID 20180 (started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
+2024-08-22T22:54:37.341+02:00  INFO 20180 --- [main] Controller.PlayersControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T22:54:41.369+02:00  INFO 20180 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-22T22:54:41.369+02:00  INFO 20180 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-22T22:54:41.369+02:00  INFO 20180 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-08-22T22:54:41.411+02:00  INFO 20180 --- [main] Controller.PlayersControllerTest         : Started PlayersControllerTest in 4.613 seconds (process running for 6.447)
+2024-08-22T22:54:41.573+02:00  INFO 20180 --- [main] c.p.stats.controller.PlayersController   : Retrieving all players
+2024-08-22T22:55:09.115+02:00  INFO 25520 --- [main] Controller.PlayersControllerTest         : Starting PlayersControllerTest using Java 17.0.2 with PID 25520 (started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
+2024-08-22T22:55:09.115+02:00  INFO 25520 --- [main] Controller.PlayersControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T22:55:12.684+02:00  INFO 25520 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-22T22:55:12.684+02:00  INFO 25520 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-22T22:55:12.690+02:00  INFO 25520 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-08-22T22:55:12.755+02:00  INFO 25520 --- [main] Controller.PlayersControllerTest         : Started PlayersControllerTest in 4.222 seconds (process running for 7.022)
+2024-08-22T22:55:13.010+02:00  WARN 25520 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "stats"]
+2024-08-22T22:55:58.723+02:00  INFO 5872 --- [main] Controller.PlayersControllerTest         : Starting PlayersControllerTest using Java 22.0.2 with PID 5872 (started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
+2024-08-22T22:55:58.730+02:00  INFO 5872 --- [main] Controller.PlayersControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T22:56:02.556+02:00  INFO 5872 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-22T22:56:02.556+02:00  INFO 5872 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-22T22:56:02.556+02:00  INFO 5872 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-08-22T22:56:02.600+02:00  INFO 5872 --- [main] Controller.PlayersControllerTest         : Started PlayersControllerTest in 4.618 seconds (process running for 5.93)
+2024-08-22T22:56:02.767+02:00  INFO 5872 --- [main] c.p.stats.controller.PlayersController   : Retrieving player with id 1
+2024-08-22T22:56:02.877+02:00  INFO 5872 --- [main] c.p.stats.controller.PlayersController   : Retrieving players statistics
+2024-08-22T22:56:02.891+02:00  INFO 5872 --- [main] c.p.stats.controller.PlayersController   : Retrieving all players
+2024-08-22T22:56:26.469+02:00  INFO 13640 --- [main] Controller.PlayersControllerTest         : Starting PlayersControllerTest using Java 22.0.2 with PID 13640 (started by janai in C:\Users\janai\Desktop\Projets\PlayersStatistics)
+2024-08-22T22:56:26.473+02:00  INFO 13640 --- [main] Controller.PlayersControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T22:56:30.168+02:00  INFO 13640 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-22T22:56:30.169+02:00  INFO 13640 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-22T22:56:30.172+02:00  INFO 13640 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-08-22T22:56:30.224+02:00  INFO 13640 --- [main] Controller.PlayersControllerTest         : Started PlayersControllerTest in 4.418 seconds (process running for 5.915)
+2024-08-22T22:56:30.407+02:00  INFO 13640 --- [main] c.p.stats.controller.PlayersController   : Retrieving player with id 1
+2024-08-22T22:56:30.521+02:00  INFO 13640 --- [main] c.p.stats.controller.PlayersController   : Retrieving players statistics
+2024-08-22T22:56:30.540+02:00  INFO 13640 --- [main] c.p.stats.controller.PlayersController   : Retrieving all players

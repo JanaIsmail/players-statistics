@@ -56,7 +56,7 @@ public class PlayersControllerTest {
     @Test
     void test_get_players_stats() throws Exception {
         when(playersService.getStats()).thenReturn(PlayersStatistics.builder().build());
-        String content = mockMvc.perform(get("/api/players/stats"))
+        String content = mockMvc.perform(get("/api/players/statistics"))
                 .andExpect(status().isOk())
                 .andReturn()
                 .getResponse()
