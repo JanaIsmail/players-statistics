@@ -4,6 +4,7 @@ import com.players.stats.dto.Player;
 import com.players.stats.dto.Players;
 import com.players.stats.dto.PlayersStatistics;
 import com.players.stats.exception.PlayerNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -14,6 +15,7 @@ public class PlayersService {
 
     private final List<Player> playersList;
 
+    @Autowired
     public PlayersService(Players players) {
         this.playersList = (null != players) ? players.getPlayers() : new ArrayList<>();
     }
